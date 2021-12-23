@@ -23,6 +23,13 @@ Pagination.nextPage().nextPage(); // the ability to call chainable
 
 Pagination.goToPage(3); // current page must be set to 3
 ```
-[See the solution](https://github.com/GevKerobyan/13-__proto__/blob/master/classWork13_01.js)
+[See the solution ✌️](https://github.com/GevKerobyan/13-__proto__/blob/master/classWork13_01.js)
 
 ---
+
+## Airplane TASK:
+
+* Write an Airplane object that initializes name.
+* Give airplanes the ability to .takeOff() and .land():
+    - If a plane takes off, its isFlying property is set to true.
+    - If a plane lands, its isFlying property is set to false.
