@@ -7,6 +7,25 @@
 
 const Airplane = {
     name: "",
+    takeOff() {
+        if (this.takeOff) return true;
+    },
+    land(){
+        if (this.land) return true;
+    },
 }
+
+let Boeing747 = {
+    __proto__: Airplane,
+    isFlying () {
+        if (takeOff){
+            return true;
+        }
+        if (land) {
+            return false;
+        }
+    },
+}
+
 
 
