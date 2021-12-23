@@ -27,5 +27,7 @@ let Boeing747 = {
     },
 }
 
+console.log(Boeing747.isFlying(takeOff));
+
 
 
