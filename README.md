@@ -35,4 +35,5 @@ Pagination.goToPage(3); // current page must be set to 3
     - If a plane lands, its isFlying property is set to false.
 
 ---
-    /* still working on it */
+
+   ### *Still working on it*

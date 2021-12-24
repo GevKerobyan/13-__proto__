@@ -22,7 +22,8 @@ let pagination = {
     },
 
     nextPage: function () {
-        return ++this.currentPage;
+       this.currentPage++;
+       return pagination;
     },
 
     lastPage: function () {
@@ -36,7 +37,7 @@ let pagination = {
 } /* OBJECT CLOSURE BRACES */
 
 console.log(pagination.prevPage())
-console.log(pagination.nextPage().nextPage())
+pagination.nextPage().nextPage()
 console.log(pagination.firstPage)
 console.log(pagination.lastPage())
 console.log(pagination.goToPage(2))
