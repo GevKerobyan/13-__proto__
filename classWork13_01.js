@@ -14,7 +14,7 @@ let pagination = {
     currentPage: 1,
 
     prevPage: function () {
-        if (this.currentPage > 1){
+        if (this.currentPage > 1) {
             return --this.currentPage;
         } else {
             return "N/A";
@@ -22,23 +22,25 @@ let pagination = {
     },
 
     nextPage: function () {
-       this.currentPage++;
-       return pagination;
+        if (this.currentPage <= this.bookPages.length) {
+            this.currentPage++;
+            return pagination;
+        }
     },
 
     lastPage: function () {
         return this.currentPage = this.bookPages().length;
     },
 
-    goToPage (pageN) { return this.currentPage = pageN; },
+    goToPage(pageN) { return this.currentPage = pageN; },
 
-    getPageItems: function () { return this.bookPages()[pagination.currentPage-1]; },
+    getPageItems: function () { return this.bookPages()[pagination.currentPage - 1]; },
 
 } /* OBJECT CLOSURE BRACES */
 
-console.log(pagination.prevPage())
+pagination.prevPage()
 pagination.nextPage().nextPage()
-console.log(pagination.firstPage)
-console.log(pagination.lastPage())
-console.log(pagination.goToPage(2))
+pagination.firstPage
+pagination.lastPage()
+pagination.goToPage(2)
 console.log(pagination.getPageItems())
