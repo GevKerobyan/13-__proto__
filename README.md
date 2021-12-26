@@ -34,6 +34,16 @@ Pagination.goToPage(3); // current page must be set to 3
     - If a plane takes off, its isFlying property is set to true.
     - If a plane lands, its isFlying property is set to false.
 
+```
+Airplane.name(`Kukuruznik`);
+console.log(Airplane.name);
+Airplane.takeOff();
+console.log(Airplane.isFlying);
+Airplane.land();
+console.log(Airplane.isFlying);
+```
+[See the solution ✌️](https://github.com/GevKerobyan/13-__proto__/blob/master/classWork13_02.js)
+
 ---
 
-   ### *Still working on it*
+   

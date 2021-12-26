@@ -8,19 +8,19 @@
 "use strict";
 
 const Airplane = {
-    name (planeName) {
+    name(planeName) {
         this.name = planeName;
     },
     isFlying: undefined,
     takeOff() {
         return this.isFlying = true;
     },
-    land(){
+    land() {
         return this.isFlying = false;
     },
 }
 
-Airplane.name (`Kukuruznik`);
+Airplane.name(`Kukuruznik`);
 console.log(Airplane.name);
 Airplane.takeOff();
 console.log(Airplane.isFlying);

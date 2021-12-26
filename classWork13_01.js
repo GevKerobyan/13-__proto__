@@ -19,13 +19,15 @@ let pagination = {
         } else {
             return "N/A";
         }
+       
     },
 
     nextPage: function () {
         if (this.currentPage <= this.bookPages.length) {
             this.currentPage++;
-            return pagination;
+            
         }
+        return pagination;
     },
 
     lastPage: function () {
@@ -39,7 +41,7 @@ let pagination = {
 } /* OBJECT CLOSURE BRACES */
 
 pagination.prevPage()
-pagination.nextPage().nextPage()
+pagination.nextPage().nextPage();
 pagination.firstPage
 pagination.lastPage()
 pagination.goToPage(2)
