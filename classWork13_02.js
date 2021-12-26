@@ -5,29 +5,24 @@
 // If a plane takes off, its isFlying property is set to true.
 // If a plane lands, its isFlying property is set to false.
 
+"use strict";
+
 const Airplane = {
-    name: "",
+    name (planeName) {
+        this.name = planeName;
+    },
+    isFlying: undefined,
     takeOff() {
-        if (this.takeOff) return true;
+        return this.isFlying = true;
     },
     land(){
-        if (this.land) return true;
+        return this.isFlying = false;
     },
 }
 
-let Boeing747 = {
-    __proto__: Airplane,
-    isFlying () {
-        if (takeOff){
-            return true;
-        }
-        if (land) {
-            return false;
-        }
-    },
-}
-
-console.log(Boeing747.isFlying(takeOff));
-
-
-
+Airplane.name (`Kukuruznik`);
+console.log(Airplane.name);
+Airplane.takeOff();
+console.log(Airplane.isFlying);
+Airplane.land();
+console.log(Airplane.isFlying);
