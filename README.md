@@ -75,5 +75,8 @@ console.log("hello, world!");
 const emptyWithoutProto = Object.create(null);
 const num = 12;
 const isAuth = false;
+```
 
 [See the solution ✌️](https://github.com/GevKerobyan/13-__proto__/blob/master/protoDiagram.png)
+
+---
